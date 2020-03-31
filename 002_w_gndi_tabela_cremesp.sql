@@ -1,10 +1,10 @@
--- cria nova tabela com os dados do arquivo cremesp
+-- recria nova tabela com os dados do arquivo cremesp
+drop table tasy.w_gndi_tabela_cremesp;
 create table tasy.w_gndi_tabela_cremesp
 (
      Codigo         number(10),
      Nome           varchar2(60),
-     Situacao       char(1),
-     UF             char(2)
+     Situacao       char(1)
 )
    organization external
 (
